@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<style type="text/css">
+		*{padding: 0; margin: 0;box-sizing: border-box;}
+		header{
+
+			width: 100%;
+			height: 100vh;
+			background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('imgs/mountfuji.jpg');
+			background-size: cover;
+			font-family: serif ;
+		}
+		nav{
+			width: 100%;
+			height: 200px;
+			background-color: rgba(0,0,0,.2);
+			color: black;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+				}
+
+		.logo{
+
+			font-size: 6em;
+			letter-spacing: -25px;
+			font-family: serif;
+			color: ghostwhite;
+			position: left;
+			transform: translate(-250%,0%);
+
+		}
+		.menu a{
+			font-size: 60px;
+			text-decoration: none;
+			color: ghostwhite;
+			padding: 10px 20px;
+			position: relative;
+
+
+		}
+
+		.menu a:before{
+			content: '';
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 0%;
+			height: 100%;
+			border-bottom: 2px solid indianred;
+			transition: 0.4s linear;
+
+		}
+
+		.menu a:hover:before{
+			width: 100%;
+		}
+
+
+		.booknow a{
+		
+			font-size: 60px;
+			text-decoration: none;
+			color: ghostwhite;
+			padding: 10px 20px;
+			background-color: indianred;
+			border-radius: 10px;
+			transition: 0.4s;
+		}
+		.booknow a:hover{
+
+			background:var(--clr) ;
+			box-shadow: 0 0 35px var(--clr);
+		}
+
+		
+
+		.htxt{
+
+			max-width: 650px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			color: white;
+
+
+
+		}
+
+		.htxt span{
+
+			letter-spacing: 20px;
+
+		}
+
+		.htxt h1{
+			font-size: 6em;
+
+		}
+
+		.htxt a{
+			text-decoration: initial;
+			background-color: indianred;
+			color: whitesmoke;
+			padding: 10px 20px;
+			letter-spacing: 5px;
+			font-size: 70px;
+			border-radius: 10px;
+			transition: 0.4s ;
+		}
+
+		.htxt a:hover{
+			background: var(--clr);
+			box-shadow: 0 0 35px var(--clr);
+
+		}
+
+
+
+
+
+		.htxt h2{
+
+			font-size: 3em;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+<header>
+	<nav>
+       <div class="logo">
+       	WU
+       </div>		
+       <div class="menu">
+       		<a href="#">Home</a>
+       		<a href="#">Gallery</a>
+       		<a href="#">Deals</a>
+       		<a href="#">Blog</a>
+       		<a href="#">About us</a>
+       	  </div>
+
+       	<div class="booknow">
+       		<a href="#">Book now</a>
+
+
+       		
+       	</div>
+
+
+	</nav>	
+	<section class="htxt">
+		<h1>International Trips</h1>
+		<h2>At Affordable Prices</h2>
+
+		<br>
+		<a href="#">Schedule Trip</a>
+
+
+
+
+	</section>
+
+
+
+
+</header>
+</body>
+</html>
